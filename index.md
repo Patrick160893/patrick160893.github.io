@@ -1,4 +1,4 @@
-## Hi, I'm Patrick 
+## Hi, I'm Patrick and I am data scientist with a strong yearning to furtehr my knowledge of programming, statistics, and databade management.
 
 You can use the [editor on GitHub](https://github.com/Patrick160893/patrick160893.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
