@@ -1,4 +1,6 @@
-## Hi, my name is Patrick and I am data scientist with a strong yearning to further my knowledge of programming, statistics, and database management.
+## Hi, my name is Patrick and I am have range of interests which I hope to catalog regularly on this website if the hope of inspiring others to keep learning - whatever one may be into :-)
+
+On a highlevel, some of my areas of interest include:
 
 Table of Contents:
 
