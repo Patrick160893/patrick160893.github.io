@@ -2,6 +2,10 @@
 
 On a highlevel, some of my areas of interest include:
 
+* Item
+* Item
+* Item
+
 Table of Contents:
 
 You can use the [editor on GitHub](https://github.com/Patrick160893/patrick160893.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
