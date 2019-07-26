@@ -1,3 +1,7 @@
 theme: jekyll-theme-slate
 title: Welcome to Patrick's homepage
 description: A place cataloguing all of my areas of interest!
+
+collections:
+  interests:
+    output: true
