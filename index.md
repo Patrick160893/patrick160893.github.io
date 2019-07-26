@@ -2,9 +2,13 @@
 
 On a highlevel, some of my areas of interest include:
 
-* Item
-* Item
-* Item
+* Mathematics
+* Process Improvement
+* Japanese
+* Classical Studies
+* Physics
+
+Yes, I know - it is a chaotic ensemble of subjects but hey, at least anyone would would find something to interest them here.
 
 Table of Contents:
 
