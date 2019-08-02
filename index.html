@@ -1,48 +1,34 @@
+---
+layout: default
+---
 
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Patrick O'Rourke</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Patrick O'Rourke!</h1>
-				<p>I wanted to catalog all my interests onto a single web forum in the hope of meeting others
-					who may share what catches my fascination
-			<em> Feel free to reach out!. </em> <a href="/about">Read more about my life...</a></p>
-		
-                <h2>List of my interests</h2>
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
 
-                <ul>
-                <a href="https://patrick160893.github.io/film.html">film</a>
-                <li>Mathematics</li>
-                <li>Physics</li>
-                <li>Chemistry</li>
-		<li>Biology</li>
-                <li>French</li>
-                <li>Japanese</li>
-                <li>Classical Studies/li>
-                </ul>  
+  {{ content }}
 
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
 
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:patrick.orourke160893@gmail.com">email</a></li>
-        		<li><a href="https://github.com/Patrick160893">github.com/Patrick160893</a></li>
-			</ul>
-		</footer>
-	</body>
-</html>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>
